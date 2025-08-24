@@ -1,0 +1,12 @@
+import streamlit as st
+st.set_page_config(page_title="Data Dictionary", layout="wide")
+st.title("Data Dictionary and Attribute Details")
+st.markdown("This page explains each of the input variables required for the MHABI calculation.")
+st.markdown("---")
+with st.expander("`patient_id`"): st.markdown("- **Definition:** A unique identifier for each patient.")
+with st.expander("`region`, `age_group`, `gender`"): st.markdown("- **Definition:** Demographic variables used for filtering and segmenting the data.")
+with st.expander("`wait_time_days`"): st.markdown("- **Definition:** The number of days a patient has been on a waitlist for mental health services.")
+with st.expander("`dalys` (Disability-Adjusted Life Years)"): st.markdown("- **Definition:** A standardized public health metric representing the years of 'healthy' life lost due to disability.")
+with st.expander("`er_visits_last_year`"): st.markdown("- **Definition:** The number of emergency room visits related to mental health crises in the past 12 months.")
+with st.expander("`missed_work_school_days`"): st.markdown("- **Definition:** The number of days of work or school missed due to mental health issues in the past 3 months.")
+with st.expander("`suicide_risk_score`"): st.markdown("- **Definition:** A clinically assessed score (from 1 to 10) representing the patient's immediate risk of self-harm.")
